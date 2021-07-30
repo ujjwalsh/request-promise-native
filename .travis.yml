@@ -5,16 +5,40 @@ matrix:
   include:
   - node_js: "0.12"
     env: V_REQUEST=2.76.0
+    arch: amd64
   - node_js: "iojs"
     env: V_REQUEST=2.76.0
+    arch: amd64
   - node_js: "4"
     env: V_REQUEST=latest
+    arch: amd64
   - node_js: "6"
     env: V_REQUEST=latest
+    arch: amd64
   - node_js: "8"
     env: V_REQUEST=latest
+    arch: amd64
   - node_js: "10"
     env: V_REQUEST=latest
+    arch: amd64
+  - node_js: "0.12"
+    env: V_REQUEST=2.76.0
+    arch: ppc64le
+  - node_js: "iojs"
+    env: V_REQUEST=2.76.0
+    arch: ppc64le
+  - node_js: "4"
+    env: V_REQUEST=latest
+    arch: ppc64le
+  - node_js: "6"
+    env: V_REQUEST=latest
+    arch: ppc64le
+  - node_js: "8"
+    env: V_REQUEST=latest
+    arch: ppc64le
+  - node_js: "10"
+    env: V_REQUEST=latest
+    arch: ppc64le
 
 before_install:
   - npm install tough-cookie
